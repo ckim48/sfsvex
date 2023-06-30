@@ -14,356 +14,778 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
 </head>
 
 <body>
 
+
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo"><a href="index.html">SFS-Vex</a></h1>
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">SFS-Vex</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul class="text-center">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li class="dropdown"><a href="#"><span>Team</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="team.html">Varsity A</a></li>
-              <li><a href="team.html">Varsity B</a></li>
-              <li><a href="team.html">Junior Varsity</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Media</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      <!-- <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a> -->
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container text-right">
-      <h3 class="animate__animated animate__lightSpeedInRight" >Welcome to <strong class="color-red">SFS-VEX</strong></h3>
-      <h1 class="animate__animated animate__lightSpeedInRight animate__delay-1s">We're Creative Vex Team</h1>
-      <h2 class ="animate__animated animate__lightSpeedInRight animate__delay-1s">We are team of talented programmers and enginners</h2>
-      <a href="#about" class="btn-get-started scrollto animate__animated animate__lightSpeedInRight animate__delay-2s">More</a>
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="">We're Creative <span class="color-red">Vex Team</span></h1>
+          <h2 class ="">We are team of talented programmers and enginners</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <!-- <a href="https://www.youtube.com/watch?v=6lTNFVHWvu4" class="glightbox play-btn"></a> -->
+        </div>
+
+      </div>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about back-white">
-      <div class="container">
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <h3>Learn More About <span>&nbsp;SFS-VEX</span></h3>
-          <p>The VEX team, a dedicated group of aspiring engineers and robotics enthusiasts, is at the forefront of innovation and competition in the field of robotics</p>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              The SFS-VEX team consists of both a junior and senior team, showcasing the talents and dedication of young robotics enthusiasts at different stages of their academic journey.
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Learn More About <span class="color-red">SFS-VEX</span></h3>
+            <p class="fst-italic">
+              The VEX team, a dedicated group of aspiring engineers and robotics enthusiasts, is at the forefront of innovation and competition in the field of robotics.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> 7th ~ 8th: Junior</li>
-              <li><i class="ri-check-double-line"></i> 9th ~ 12th: Senior</li>
+              <li><i class="bi bi-check-circle"></i> The SFS-VEX team consists of both a junior and senior team, showcasing the talents and dedication of young robotics enthusiasts at different stages of their academic journey.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
             </ul>
-                        <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 align-items-center justify-content-center">
-            <p>
-                          <img src="assets/img/sample1.jpg" class="img-fluid mx-auto" alt="">
-
-              <!-- Our VEX team comprises a diverse group of talented programmers and engineers, united by their passion for robotics and their exceptional skills in programming and engineering. -->
-            </p>
-
+<!--             <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p> -->
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services back-black">
-      <div class="container">
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
-          <h3>We do a lot of awesome <span>Activites</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <h2>Schedule</h2>
+          <p>Schedule</p>
         </div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-trophy"></i></div>
-              <h4 class="title"><a href="">Competition</a></h4>
-              <p class="description color-black">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">General</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Event1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Event2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Event3</a>
+              </li>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-file-person"></i></div>
-              <h4 class="title"><a href="">Conference</a></h4>
-              <p class="description color-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-robot"></i></div>
-              <h4 class="title"><a href="">Clubs</a></h4>
-              <p class="description color-black">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-pencil-square"></i></div>
-              <h4 class="title"><a href="">Tutoring</a></h4>
-              <p class="description color-black">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <h3>Check our <span>Works</span></h3>
-
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Code</li>
-              <li data-filter=".filter-card">Robots</li>
-              <li data-filter=".filter-web">Others</li>
             </ul>
           </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                   <h2 class="text-uppercase text-letter-spacing-xs my-0 text-primary font-weight-bold color-red mb-3">
+                            General Schedule
+                          </h2>
+    <table class="table table-bordered .table-responsive ">
+      <thead>
+        <tr class="text-center">
+          <th>Time</th>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr class="text-center">
+          <td class="time">8:00 AM</td>
+          <td class="time-slot">Sleep</td>
+          <td class="time-slot">Breakfast</td>
+          <td class="time-slot">Exercise</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+        <!-- Repeat the above <tr> for each time slot or event -->
+        <tr class="text-center">
+          <td class="time">9:00 AM</td>
+          <td class="time-slot">Sleep</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                <tr>
+          <td class="time">10:00 AM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                <tr>
+          <td class="time">11:00 AM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                <tr>
+          <td class="time">12:00 PM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                <tr>
+          <td class="time">1:00 PM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                <tr>
+          <td class="time">2:00 PM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                        <tr>
+          <td class="time">3:00 PM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                        <tr>
+          <td class="time">4:00 PM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+                        <tr>
+          <td class="time">5:00 PM</td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+          <td class="time-slot"></td>
+        </tr>
+        <!-- Repeat for additional time slots -->
+      </tbody>
+    </table>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="container py-7">
+                          <h2 class="text-uppercase text-letter-spacing-xs my-0 text-primary font-weight-bold color-red">
+                            Event Name - Schedule
+                          </h2>
+                          <p class="text-sm text-white mt-0 mb-5">About Event.</p>
+                          <!-- Days -->
+                          <div class="row">
+                            <div class="col-lg-4 mb-3" id="Friday, Nov 13th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Friday, Nov 13th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item show p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="font-weight-bold op-8 infinite animated flash" data-animate="flash" data-animate-infinite="1" data-animate-duration="3.5" style="animation-duration: 3.5s;">Now</span> - Vitaly Friedmann</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8 show" id="day-1-item-2"> Talk: Wireframing / <span class="">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-1-item-4"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Jesscia Lawrence</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-1-item-6"> Talk: Ninja coding / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3" id="Saturday, Nov 14th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Saturday, Nov 14th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">10:00 - 12:00</span> - Vitaly Friedmann</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-2"> Talk: Wireframing / <span class="text-primary">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Bruce Lawson</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-4"> Talk: Big Data / <span class="text-primary">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3" id="Sunday, Nov 15th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Sunday, Nov 15th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">10:00 - 12:00</span> - Jesscia Lawrence</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-2"> Talk: Ninja coding / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-4"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="container py-7">
+                          <h2 class="text-uppercase text-letter-spacing-xs my-0 text-primary font-weight-bold color-red">
+                            Event Name - Schedule
+                          </h2>
+                          <p class="text-sm text-white mt-0 mb-5">About Event.</p>
+                          <!-- Days -->
+                          <div class="row">
+                            <div class="col-lg-4 mb-3" id="Friday, Nov 13th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Friday, Nov 13th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item show p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="font-weight-bold op-8 infinite animated flash" data-animate="flash" data-animate-infinite="1" data-animate-duration="3.5" style="animation-duration: 3.5s;">Now</span> - Vitaly Friedmann</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8 show" id="day-1-item-2"> Talk: Wireframing / <span class="">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-1-item-4"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Jesscia Lawrence</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-1-item-6"> Talk: Ninja coding / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3" id="Saturday, Nov 14th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Saturday, Nov 14th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">10:00 - 12:00</span> - Vitaly Friedmann</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-2"> Talk: Wireframing / <span class="text-primary">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Bruce Lawson</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-4"> Talk: Big Data / <span class="text-primary">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3" id="Sunday, Nov 15th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Sunday, Nov 15th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">10:00 - 12:00</span> - Jesscia Lawrence</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-2"> Talk: Ninja coding / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-4"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="container py-7">
+                          <h2 class="text-uppercase text-letter-spacing-xs my-0 text-primary font-weight-bold color-red">
+                            Event Name - Schedule
+                          </h2>
+                          <p class="text-sm text-white mt-0 mb-5">About Event.</p>
+                          <!-- Days -->
+                          <div class="row">
+                            <div class="col-lg-4 mb-3" id="Friday, Nov 13th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Friday, Nov 13th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item show p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="font-weight-bold op-8 infinite animated flash" data-animate="flash" data-animate-infinite="1" data-animate-duration="3.5" style="animation-duration: 3.5s;">Now</span> - Vitaly Friedmann</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8 show" id="day-1-item-2"> Talk: Wireframing / <span class="">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-1-item-4"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Jesscia Lawrence</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-1-item-6"> Talk: Ninja coding / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3" id="Saturday, Nov 14th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Saturday, Nov 14th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">10:00 - 12:00</span> - Vitaly Friedmann</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-2"> Talk: Wireframing / <span class="text-primary">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Bruce Lawson</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-4"> Talk: Big Data / <span class="text-primary">Room 19</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-2-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3" id="Sunday, Nov 15th">
+                              <h4 class="mt-0 mb-3 text-white op-8 font-weight-bold">
+                                Sunday, Nov 15th
+                              </h4>
+                              <ul class="list-timeline list-timeline-primary">
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">09:00 - 10:00</span> - Registration</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-2">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">10:00 - 12:00</span> - Jesscia Lawrence</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-2"> Talk: Ninja coding / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00 - 13:00</span> - Lunch Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-4">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00 - 15:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-4"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 - 16:00</span> - Coffee Break</p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-3-item-6">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 - 18:00</span> - Anthony Jonas</p>
+                                  <p class="my-0 collapse flex-fw text-uppercase text-xs text-white op-8" id="day-3-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
+                                </li>
+                                <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                                  <p class="my-0 text-white flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 - 23:00</span> - After conference</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- End Specials Section -->
 
-  
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq back-black color-white">
-      <div class="container">
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>F.A.Q</h2>
-          <h3>Frequently Asked <span>Questions</span></h3>
+          <h2>Past Events</h2>
+          <p>Amazing Events</p>
         </div>
 
-        <ul class="faq-list">
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-          <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Competition</h3>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Project3</h3>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Competition2</h3>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
       </div>
-    </section><!-- End F.A.Q Section -->
+    </section><!-- End Events Section -->
+
+
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Media</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+    <section id="contact" class="contact mt-5">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Contact</h2>
-          <h3>Contact <span>Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>Contact Us</p>
         </div>
+      </div>
 
 
-        <div class="row mt-4">
+
+        <div class="row mt-2" data-aos="fade-up">
 
           <div class="col-md-4">
             <div class="info mx-auto text-center">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
                 <p>A108 Adam Street, New York, NY 535022</p>
               </div>
@@ -371,8 +793,7 @@
           </div>
           <div class="col-md-4">
             <div class="info mx-auto text-center">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
+              <div class="">
                 <h4>Email:</h4>
                 <p>info@example.com</p>
               </div>
@@ -380,18 +801,13 @@
           </div>
            <div class="col-md-4">
             <div class="info mx-auto text-center">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
+              <div class="">
                 <h4>Call:</h4>
                 <p>+1 5589 55488 55s</p>
               </div>
             </div>
             </div>
           </div>
-    
-        </div>
-
-      </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -399,30 +815,26 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>SFS-Vex</span></strong>. All Rights Reserved
-        </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
+
     </div>
   </footer><!-- End Footer -->
 
+  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
