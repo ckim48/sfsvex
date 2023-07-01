@@ -1908,9 +1908,9 @@ section {
     .time-slot:hover {
       background-color: #f0f0f0;
     }
-        .table-custom {
-      background-color: red !important; /* Change the background color here */
-    }
+table.table-bordered.table-custom {
+  background-color: gray !important;
+}
     .event {
       position: absolute;
       top: 10px;
@@ -1927,18 +1927,21 @@ section {
     }
     
 
+.table-bordered {
+  border: 1px solid #c1282e;
+}
 
-  /*      .table-bordered {
-      border-collapse: separate;
-      border-spacing: 0;
-      border: 2px solid white;
-    }*/
-    
-    .table-bordered th,
-    .table-bordered td {
-      border: 1px solid white;
-    }
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+.table-bordered th {
+  background-color: #f0f0f0;
+}
 
+.table-bordered td:first-child {
+  background-color: #f0f0f0;
+}
     /* fut-player-card */
 .fut-player-card {
   position: relative;
